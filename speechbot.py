@@ -9,8 +9,8 @@ file_name = "speech.ogg"
 languages = ["nl", "en-GB", "en-US", "fr", "de", "it", "ru", "cs", "pl", "es", "tr", "pt", "zh", "ar", "sv", "ja"]
 
 token = "1696190462:AAGBWirzZ7PaPpcNitUadfW5MKCZdhUf9tM" #Bot token (Example: 93181085:AAELcePZ1qabYrDiu0t1PVPuw1HI0zXzXmq)
-cert = "example.crt" #SSL certificate (Can not be self-signed)
-key = "example.key"  #SSL key (Can not be self-signed)
+# cert = "example.crt" #SSL certificate (Can not be self-signed)
+# key = "example.key"  #SSL key (Can not be self-signed)
 
 api = "https://api.telegram.org/bot" + token
 
@@ -132,4 +132,4 @@ def main():
   return "OK"
 
 if __name__ == '__main__':
-   app.run('0.0.0.0', debug=False, port=443, ssl_context=(cert, key), threaded=True) #Port can be 443, 80, 88, 8443
+   app.run('0.0.0.0', debug=False, port=443, threaded=True) #Port can be 443, 80, 88, 8443
